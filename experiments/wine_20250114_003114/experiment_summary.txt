@@ -1,0 +1,58 @@
+EXPERIMENT SUMMARY
+=================
+
+Model Architecture:
+Input Size: 13
+Hidden Layers: [32, 16]
+Output Size: 3
+
+Training Parameters:
+Epochs: 1000
+Batch Size: 32
+Learning Rate: 0.001
+
+KEY RESULTS
+-----------
+Performance on Raw Data (Test Set):
+Original Model Loss: 0.0000
+XGBoost Mimic Model Loss: 0.0101
+
+Relative Improvement using XGBoost as Teacher: -146650.1%
+
+Additional Metrics:
+XGBoost Mimic Model:
+- Final XGBoost Test Loss: 0.2608
+
+Original Model:
+- Final XGBoost Test Loss: 0.8167
+
+FINAL LAYER STATISTICS
+=====================
+
+Mimic Model:
+layers.0.weight:
+  Norm: 3.0190
+  Std: 0.2328
+layers.2.weight:
+  Norm: 5.2261
+  Std: 0.2550
+layers.4.weight:
+  Norm: 6.4612
+  Std: 0.2858
+layers.6.weight:
+  Norm: 2.8551
+  Std: 0.4162
+
+Original Model:
+layers.0.weight:
+  Norm: 3.2336
+  Std: 0.2495
+layers.2.weight:
+  Norm: 5.0265
+  Std: 0.2362
+layers.4.weight:
+  Norm: 4.7809
+  Std: 0.2070
+layers.6.weight:
+  Norm: 2.0310
+  Std: 0.2960

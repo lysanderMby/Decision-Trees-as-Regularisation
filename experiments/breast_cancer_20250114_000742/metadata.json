@@ -1,0 +1,67 @@
+{
+    "timestamp": "2025-01-14T00:08:28.072283",
+    "dataset": {
+        "name": "breast_cancer",
+        "num_features": 30,
+        "num_classes": 2,
+        "train_samples": 455,
+        "test_samples": 114,
+        "feature_names": [
+            "mean radius",
+            "mean texture",
+            "mean perimeter",
+            "mean area",
+            "mean smoothness",
+            "mean compactness",
+            "mean concavity",
+            "mean concave points",
+            "mean symmetry",
+            "mean fractal dimension",
+            "radius error",
+            "texture error",
+            "perimeter error",
+            "area error",
+            "smoothness error",
+            "compactness error",
+            "concavity error",
+            "concave points error",
+            "symmetry error",
+            "fractal dimension error",
+            "worst radius",
+            "worst texture",
+            "worst perimeter",
+            "worst area",
+            "worst smoothness",
+            "worst compactness",
+            "worst concavity",
+            "worst concave points",
+            "worst symmetry",
+            "worst fractal dimension"
+        ],
+        "target_names": [
+            "malignant",
+            "benign"
+        ]
+    },
+    "parameters": {
+        "nn_layers": [
+            30,
+            32,
+            16,
+            2
+        ],
+        "num_epochs": 500,
+        "batch_size": 32,
+        "learning_rate": 0.001
+    },
+    "results": {
+        "mimic_model": {
+            "final_xgb_test_loss": 0.11895299702882767,
+            "final_raw_test_loss": 0.09304875880479813
+        },
+        "original_model": {
+            "final_raw_test_loss": 0.3340989053249359,
+            "final_xgb_test_loss": 0.6758206486701965
+        }
+    }
+}

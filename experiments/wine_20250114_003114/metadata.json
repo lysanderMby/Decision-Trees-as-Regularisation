@@ -1,0 +1,52 @@
+{
+    "timestamp": "2025-01-14T00:31:50.175377",
+    "dataset": {
+        "name": "wine",
+        "num_features": 13,
+        "num_classes": 3,
+        "train_samples": 142,
+        "test_samples": 36,
+        "feature_names": [
+            "alcohol",
+            "malic_acid",
+            "ash",
+            "alcalinity_of_ash",
+            "magnesium",
+            "total_phenols",
+            "flavanoids",
+            "nonflavanoid_phenols",
+            "proanthocyanins",
+            "color_intensity",
+            "hue",
+            "od280/od315_of_diluted_wines",
+            "proline"
+        ],
+        "target_names": [
+            "class_0",
+            "class_1",
+            "class_2"
+        ],
+        "is_regression": false
+    },
+    "parameters": {
+        "nn_layers": [
+            13,
+            32,
+            16,
+            3
+        ],
+        "num_epochs": 1000,
+        "batch_size": 32,
+        "learning_rate": 0.001
+    },
+    "results": {
+        "mimic_model": {
+            "final_xgb_test_loss": 0.2608208954334259,
+            "final_raw_test_loss": 0.010092522017657757
+        },
+        "original_model": {
+            "final_raw_test_loss": 6.877352461742703e-06,
+            "final_xgb_test_loss": 0.8166894912719727
+        }
+    }
+}
